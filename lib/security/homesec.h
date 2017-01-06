@@ -16,15 +16,16 @@
 #define SIG_LED_BUILTIN_BLINK     5
 #define SIG_LED_RED_BLINK         6
 
-#define WIFI_CONNECT_RETRY_LIMIT 12   //cycle
+#define WIFI_CONNECT_RETRY_LIMIT 12   //asdas
 #define LONG_PUSH_LIMIT          2000 //ms
+#define SLEEP_MAIN               5 //s
 
 #define LED_BUILTIN_ON (digitalWrite(LED_BUILTIN, LOW))
 #define LED_BUILTIN_OFF (digitalWrite(LED_BUILTIN, HIGH))
 #define LED_RED_ON (digitalWrite(LED_RED, HIGH))
 #define LED_RED_OFF (digitalWrite(LED_RED, LOW))
 
-enum statuses { st_init,st_idle,st_armed,st_triggered };
+enum statuses { st_init,st_idle,st_armed,st_triggered,alarm };
 extern statuses security_status;
 
 //EEPROM

@@ -54,6 +54,6 @@ void setup() {
 
 void loop() {
 
-  delay(5000);
+  delay(SLEEP_MAIN * 1000); //ESP.deepSleep(SLEEP_MAIN * 1000000);
   set_signalizeEvent(SIG_LED_BUILTIN_BLINK);
 }
